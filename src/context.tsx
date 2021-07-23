@@ -25,10 +25,10 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     if (!file) return;
-    if (!ALLOW_FORMATS.includes(file.type)) {
-      alert('File should be jpeg, png or jpg!');
-      return;
-    }
+    // if (!ALLOW_FORMATS.includes(file.type)) {
+    //   alert('File should be jpeg, png or jpg!');
+    //   return;
+    // }
     console.log(file.type);
     const uploadImage = async () => {
       try {
