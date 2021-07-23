@@ -6,6 +6,7 @@ interface StateType {
   setFile: React.Dispatch<React.SetStateAction<File | null>>;
   loading: boolean;
   previewUrl: string | undefined;
+  setPreviewUrl: React.Dispatch<React.SetStateAction<string | undefined>>;
 }
 
 const ALLOW_FORMATS: string[] = ['image/jpeg', 'image/png', 'image/jpg'];
@@ -48,7 +49,9 @@ const AppProvider = ({ children }: { children: React.ReactNode }) => {
   }, [file]);
 
   return (
-    <AppContext.Provider value={{ setFile, loading, previewUrl }}>
+    <AppContext.Provider
+      value={{ setFile, loading, previewUrl, setPreviewUrl }}
+    >
       {children}
     </AppContext.Provider>
   );

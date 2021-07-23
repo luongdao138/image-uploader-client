@@ -18,7 +18,7 @@ const ImageUpload = () => {
   return (
     <>
       <Title small={false}>Upload your image</Title>
-      <Title small>File should be Jpeg, Png</Title>
+      <Title small>File should be Jpeg, Png or Jpg</Title>
       <Dropzone {...getRootProps()}>
         <img src={Logo} alt='' />
         <span>Drag & Drop your image here</span>

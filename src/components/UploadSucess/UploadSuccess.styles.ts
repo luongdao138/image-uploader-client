@@ -51,3 +51,12 @@ export const Copy = styled.div`
     color: #fff;
   }
 `;
+
+export const Button = styled.button`
+  width: 80px;
+  font-size: 10px;
+  background: #219653;
+  border-radius: 8px;
+  color: #fff;
+  padding: 8px 20px;
+`;
